@@ -1,0 +1,9 @@
+.pod_container {
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+.pod_image {
+  max-width:100%;
+}

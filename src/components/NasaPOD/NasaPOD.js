@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './NasaPOD.css'
+
 class NasaPOD extends Component {
   constructor(props) {
     super(props)
@@ -21,8 +23,13 @@ class NasaPOD extends Component {
   render() {
     
     return (
-      <div>
-        <img src={this.state.photo.url} alt="photo"/>
+      <div className="pod_container">
+        <h3>{this.state.photo.title}</h3>
+        <img 
+          className="pod_image"
+          src={this.state.photo.url} 
+          alt={this.state.photo.url}/>
+        <p>{this.state.photo.explanation}</p>
       </div>
     )
   }
