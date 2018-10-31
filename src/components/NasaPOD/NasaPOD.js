@@ -24,12 +24,15 @@ class NasaPOD extends Component {
     
     return (
       <div className="pod_container">
-        <h3>{this.state.photo.title}</h3>
+        <h2 className="pod_title">Nasa Photo Of The Day</h2>
+        <h3 className="pod_image-title">                  {this.state.photo.title}
+        </h3>
         <img 
           className="pod_image"
           src={this.state.photo.url} 
           alt={this.state.photo.url}/>
-        <p>{this.state.photo.explanation}</p>
+        <p className="pod_image-explanation">             {this.state.photo.explanation}
+        </p>
       </div>
     )
   }
