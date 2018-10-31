@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import NasaPOD from './components/NasaPOD/NasaPOD'
 import './App.css';
 
 class App extends Component {
@@ -9,7 +11,7 @@ class App extends Component {
           <h1>Inspired</h1>          
         </header>
         <div>
-          
+          <NasaPOD />
         </div>
       </div>
     );
