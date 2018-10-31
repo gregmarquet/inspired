@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Moment from 'react-moment';
 
 import NasaPOD from './components/NasaPOD/NasaPOD'
+import NatGeoPOD from './components/NatGeoPOD/NatGeoPOD'
 import './App.css';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         </header>
         <div>
           <NasaPOD />
+          <NatGeoPOD />
         </div>
       </div>
     );
