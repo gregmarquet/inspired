@@ -10,15 +10,28 @@ class NatGeoPOD extends Component {
     super(props)
 
     this.state = {
-      photo: {}
+      photo: '',
+      caption: '',
+      title: '',
+      altText: ''
     }
   }
 
   componentDidMount() {
     natgeo.getPhotoOfDay()
-      .then(data => this.setState({
-        photo: data.data[0].attributes.image
-      }))
+      .then((data) => {
+        const photoData = data.data[0].attributes.image;
+        const photo = photoData.uri
+        const caption = photoData.caption;
+        const title = photoData.title;
+        const altText = photoData
+        this.setState({
+          photo,
+          caption: caption.slice(3, caption.length - 5),
+          title,
+          altText
+        })
+      })
       .then(() => console.log(this.state.photo))
   }
 
@@ -26,14 +39,15 @@ class NatGeoPOD extends Component {
 
     return (
       <div className="pod_container">
-        <h2 className="pod_title">National Geography Photo Of The Day</h2>
-        <h3 className="pod_image-title">                  {this.state.photo.title}
+        <h2 className="pod_title">National Geographic Photo Of The Day</h2>
+        <h3 className="pod_image-title">                  {this.state.title}
         </h3>
         <img
           className="pod_image"
-          src={this.state.photo.uri}
-          alt={this.state.photo.alt_text} />
-        <p className="pod_image-explanation">             {this.state.photo.caption}
+          src={this.state.photo}
+          alt={this.state.altText} />
+        <p className="pod_image-explanation">             
+        { this.state.caption }
         </p>
       </div>
     )
