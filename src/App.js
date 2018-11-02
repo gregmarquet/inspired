@@ -3,6 +3,7 @@ import Moment from 'react-moment';
 
 import NasaPOD from './components/NasaPOD/NasaPOD'
 import NatGeoPOD from './components/NatGeoPOD/NatGeoPOD'
+import UnsplashPOD from './components/UnsplashPOD/UnsplashPOD'
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,12 @@ class App extends Component {
         <div>
           <NasaPOD />
           <NatGeoPOD />
+          <UnsplashPOD category='desert' />
+          <UnsplashPOD category='underwater' />
+          <UnsplashPOD category='cityscape' />
+          <UnsplashPOD category='landscape' />
+          <UnsplashPOD category='architecture' />
+          <UnsplashPOD category='animals' />
         </div>
       </div>
     );
