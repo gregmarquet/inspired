@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-// import { NationalGeographicAPI } from 'national-geographic-api';
-
-import './NatGeoPOD.css'
 
 const natgeo = require('national-geographic-api').NationalGeographicAPI;
 
@@ -32,7 +29,6 @@ class NatGeoPOD extends Component {
           altText
         })
       })
-      .then(() => console.log(this.state.photo))
   }
 
   render() {

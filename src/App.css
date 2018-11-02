@@ -38,6 +38,35 @@
   font-size: 2rem;
 }
 
+.pod_container {
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+.pod_title {
+  text-align: left;
+  padding-bottom: 5px;
+  margin: 30px 0;
+  border-bottom: 1px solid #333;
+  width: 80%;
+  font-weight: 300;
+}
+
+.pod_image-title {
+  font-weight: 300;
+}
+.pod_image {
+  max-width:100%;
+}
+
+.pod_image-explanation {
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 2rem;
+  font-weight: 300;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

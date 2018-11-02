@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './NasaPOD.css'
-
 class NasaPOD extends Component {
   constructor(props) {
     super(props)
@@ -17,7 +15,6 @@ class NasaPOD extends Component {
       .then(data  => this.setState({
         photo: data
       }))
-      .then(() => console.log(this.state.photo))
   }
   
   render() {
