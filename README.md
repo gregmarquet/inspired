@@ -5,7 +5,7 @@
 
 This app was born from my love for photography and my desire to access easily the most inspiring photos in one place.
 
-Inspired brings together the "Photo Of The Day" from NASA, National Geopraphic and Unsplash.
+Inspired brings together the "Photo Of The Day" from NASA, National Geographic and Unsplash.
 
 Nasa and National Geographic both have APIs that I am using. While Unsplash also has an API, I am using Unsplash Source, which is a simple embedding for their photos. 
 
@@ -26,11 +26,11 @@ In the render method, it displays conditionally an iframe or an img tag dependin
 
 The render method also display the title and an explanation.
 
-The NatGeoPOD component is a class based component. I import the 'national-geographic-api' package to deal with the API call and in the componentDidMount lifeCycle method I am using natgeo with the getPhotoOfDay method to retrieve their photo of the day throu the API.
+The NatGeoPOD component is a class based component. I import the 'national-geographic-api' package to deal with the API call and in the componentDidMount lifeCycle method I am using natgeo with the getPhotoOfDay method to retrieve their photo of the day through the API.
 
-The render method displays the tilte, the image and the desciption.
+The render method displays the title, the image and the description.
 
-Finaly, UnsplashPOD is a functional component. It uses template literals to inject keywords in the Unsplash Source URL (the keywords are received through props).
+Finally, UnsplashPOD is a functional component. It uses template literals to inject keywords in the Unsplash Source URL (the keywords are received through props).
 
 #### What I learned
 
@@ -39,7 +39,7 @@ I learned that the picture of the day NASA API was not always returning photos. 
 
 #### Improvements
 
-I have used the Unsplash Source API, but I would like to explore their more advanced API since I am only able to get the image through source. I would like to credit the photographer. 
+I used the Unsplash Source API, but I would like to explore their more advanced API since I would like to credit the photographers, and the Unsplash Source API only returns the image.
 
 ### If you want to help
 
